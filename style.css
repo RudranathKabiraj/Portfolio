@@ -262,25 +262,28 @@ nav ul li a:hover {
     cursor: pointer;
 }
 
-/* read rore button stylling */
+/* Read More button styling */
 .read-more-btn {
     display: inline-block;
     font-size: 18px;
     font-weight: bold;
     color: white;
-    background-color: #00aaff; /* Primary Button Color */
+    background-color: #00aaff;
     padding: 10px 20px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    transition: 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 170, 255, 0.3);
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
+/* hover effect */
 .read-more-btn:hover {
-    background-color: #0088cc; /* Darker shade on hover */
+    background-color: #0088cc;
+    transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 170, 255, 0.5);
-    transform: scale(1.05);
 }
 
 /* image Styling */
@@ -324,8 +327,7 @@ nav ul li a:hover {
 
 /* skillls section  */
 .skills-section {
-    height: 100vh; /* Full viewport height */
-    display: flex;
+    min-height: 100vh;    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -387,14 +389,24 @@ nav ul li a:hover {
 .progress-bar {
     height: 100%;
     border-radius: 5px;
-    width: 0; /* Initial width */
     transition: width 1.5s ease-in-out;
 }
 
 /* skill levels */
-.html { width: 90%; background: #ff7b00; } /* orange */
-.css { width: 85%; background: #007bff; }  /* blue */
-.js { width: 75%; background: #f7df1e; }  /* yellow */
+
+.html { width: 90%; background: #ff7b00; }
+
+.css { width: 85%; background: #007bff; }
+
+.js { width: 80%; background: #f7df1e; }
+
+.react { width: 85%;background: #61dafb; }
+
+.node { width: 75%; background: #3c873a; }
+
+.express { width: 70%; background: #888888; }
+
+.mongodb { width: 75%; background: #4db33d; }
 
 /* certifications section */
 .certifications-section {
@@ -818,3 +830,128 @@ nav ul li a:hover {
     }
 }
 
+/* LIGHT MODE */
+
+body.light {
+    background-color: #ffffff;
+    color: #111;
+}
+
+/* header */
+body.light header{
+    background:#ffffff;
+    color:#111;
+}
+
+/* home section */
+body.light #home{
+    background:linear-gradient(135deg,#f1f5f9,#e2e8f0);
+    color:#111;
+}
+
+/* about */
+body.light .about-section{
+    background:#f8fafc;
+}
+
+/* skills */
+body.light .skills-section{
+    background:linear-gradient(135deg,#e2e8f0,#f1f5f9);
+    color:#111;
+}
+
+/* certifications */
+body.light .certifications-section{
+    background:linear-gradient(135deg,#f1f5f9,#e2e8f0);
+    color:#111;
+}
+
+/* projects */
+body.light .projects-section{
+    background:linear-gradient(135deg,#f1f5f9,#e2e8f0);
+    color:#111;
+}
+
+/* contact */
+body.light .contact-section{
+    background:linear-gradient(135deg,#f1f5f9,#e2e8f0);
+    color:#111;
+}
+
+/* cards */
+body.light .project-card,
+body.light .cert-card,
+body.light .skill{
+    background:#ffffff;
+    color:#111;
+}
+
+/* form */
+body.light .contact-form{
+    background:#ffffff;
+}
+
+body.light input,
+body.light textarea{
+    background:#f1f5f9;
+    color:#111;
+}
+
+/* footer */
+body.light .footer{
+    background:linear-gradient(135deg,#e2e8f0,#f1f5f9);
+    color:#111;
+}
+
+
+/* FIX TEXT VISIBILITY IN LIGHT MODE */
+
+/* navbar links */
+body.light nav ul li a{
+    color:#111;
+}
+
+body.light nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* section text */
+body.light #home,
+body.light #about,
+body.light #skills,
+body.light #projects,
+body.light #contact{
+    color:#111;
+}
+
+/* headings */
+body.light h1,
+body.light h2,
+body.light h3{
+    color:#111;
+}
+
+/* about paragraph */
+body.light .about-text p{
+    color:#333;
+}
+
+/* skill text */
+body.light .skill-info{
+    color:#111;
+}
+
+/* project title */
+body.light .project-card h3{
+    color:#111;
+}
+
+/* certification text */
+body.light .cert-info p{
+    color:#333;
+}
+
+/* contact text */
+body.light .contact-info{
+    color:#333;
+}
